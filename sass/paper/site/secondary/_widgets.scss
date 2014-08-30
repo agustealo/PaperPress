@@ -1,0 +1,24 @@
+.widget {
+	margin: 0 0 1.5em;
+	padding-left: 1em;
+	letter-spacing:1px;
+	font-size: .8em;
+	
+	h1{
+		font-size: 1.5em;
+	}
+	ul,ol{
+	    margin-left: 0;
+	    padding-left: 2em;
+    }
+
+	/* Make sure select elements fit in widgets */
+	select {
+		max-width: 100%;
+	}
+}
+
+/* Search widget */
+.widget_search .search-submit {
+	display: none;
+}

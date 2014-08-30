@@ -99,7 +99,7 @@ get_header(); ?>
 		<?php endif; ?>
 
 		</main><!-- #main -->
-	</section><!-- #primary -->
 
 <?php get_sidebar(); ?>
+	</section><!-- #primary -->
 <?php get_footer(); ?>

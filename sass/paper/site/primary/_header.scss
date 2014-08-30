@@ -1,0 +1,152 @@
+// ==========================================================================
+// Header
+// ==========================================================================
+
+.site-header, .site-header-sm {
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 0 !important;
+	height: 180px;
+	z-index: 50;
+	-webkit-transform: translateY(0%);
+	-moz-transform: translateY(0%);
+	transform: translateY(0%);
+	@include ease(.5s);
+	background: $color__background-header;
+	width:100%;
+}
+
+/* Branding and Logo styling */
+
+.site-branding {
+	@extend .container-full;
+	display: box;
+}
+.site-header-sm .site-branding {
+	float:left;
+	@extend .col-1-4;
+	width: auto;
+	display: box;
+}
+
+/* Header container styling */
+
+.site-header-sm .main-navigation ul{
+	width: auto;
+    margin: 0 50px 0 20px;
+	display: inline-table;
+	display: inline-flex;
+    display: -moz-inline-box;
+    display: -moz-box;
+}
+.site-header-sm {
+height: 60px;
+border-bottom: 1px solid $light;
+}
+.site-header-sm ul {
+	float:right;
+}
+
+/* Navigation styling */
+
+.main-navigation {
+	clear: both;
+	width: 100%;
+}
+.site-header-sm .main-navigation {
+	float: right;
+	clear: none;
+	@extend .col-3-4;
+	a{line-height:5em;}
+}
+.main-navigation ul{
+	@extend .container-full;
+	height: 60px;
+	line-height: 1.5em;
+	display: inline-table;
+	display: inline-flex;
+    display: -moz-inline-box;
+    display: -moz-box;
+}
+
+
+/* Text styling */
+
+.site-header h1,
+.site-header h1::before,
+.site-header h1 span,
+.site-header nav,
+.site-header nav::before {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.site-header h1 {
+	font-size: 4em;
+    text-transform: uppercase;
+	height: 46px;
+	margin: .5em 0 0.3em;
+	padding: 0;
+	cursor: default;
+	width: 100%;
+	z-index: 1;
+}
+
+.site-header h1 a {
+	margin-bottom: 0 !important;
+}
+
+.site-header-sm h1 a {
+	float: left;
+	line-height: 60px;
+	margin-bottom: 0 !important;
+}
+
+.site-header-sm h1 {
+	text-transform: uppercase;
+    font-size: 3em;
+	margin: 0 20px 0 50px;
+	padding: 0;
+	cursor: default;
+	height: 60px;
+	line-height: 1.5em;
+}
+
+.site-header h2 {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+    text-transform: lowercase;
+    font-size: 1em;
+	margin:0 0 2em;
+	padding:0;
+	z-index: 1;
+	width:100%;
+}
+.site-header-sm h2 {
+    display:none !important;
+}
+
+.site-header h1::before,
+.site-header nav::before {
+	content: '';
+	height: 100%;
+}
+
+.site-header nav a {
+}
+
+.site-header nav a:hover {
+	//color: #bc3c2f;
+}
+
+.site-header nav a:last-child {
+   //margin-right: 0;
+}
+
+.site-header nav a:first-child,
+.site-header nav a:last-child {
+	//border: 2px solid $color__border-main-nav;
+}

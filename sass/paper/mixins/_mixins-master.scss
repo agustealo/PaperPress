@@ -1,0 +1,62 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1.6) {
+	font-size: ($sizeValue * 10) + px;
+	font-size: $sizeValue + rem;
+}
+
+// Box model
+@mixin box-sizing($box-model) {
+	-webkit-box-sizing: $box-model; // Safari <= 7
+  	-moz-border-radius: $box-model; // Chrome
+	-moz-box-sizing: $box-model; // Firefox <= 19
+	box-sizing: $box-model;
+}
+
+// Border radius
+@mixin border-radius($radius) {
+	background-clip: padding-box; /* stops bg color from leaking outside the border: */
+	-webkit-border-radius: $radius; // Chrome
+  	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin: 0 auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+}
+
+// Center after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+// Line Height Sizes (REMs with PX fallback for older browsers)
+@mixin line-height($size) {
+    line-height: $size + px;
+    line-height: ($size / $default-font-size) + rem;
+}
+
+// Display Inline
+@mixin display-inline {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+}
+
+// Ease In-Out
+@mixin ease($ease) {
+	-webkit-transition: all $ease;
+	-moz-transition: all $ease;
+	-ms-transition: all $ease;
+	-o-transition: all $ease;
+	transition: all $ease;
+}

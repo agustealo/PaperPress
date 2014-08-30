@@ -1,0 +1,64 @@
+$gold: #9c8449;
+$white: #fff;
+$dark: #26292E;
+$light: lighten($dark, 20%);
+$lighter: lighten($dark, 45%);
+$lightest: lighten($dark, 70%);
+
+
+//Main
+
+$color__text-main: $lighter;
+$color__text-heading: $lightest;
+$color__background-body: $dark;
+$color__background-header: $dark;
+$color__background-screen: $lightest;
+
+
+//Links, Menus, Buttons
+
+$color__link: $white;
+$color__link-visited: darken($white, 25%);
+$color__link-hover: darken($white, 15%);
+
+$color__tex-main-nav: $white;
+$color__border-main-nav: $light;
+
+$color__background-button: $light;
+$color__text-button: $light;
+$default-button-hover-color:  $light;
+$default-button-color: $dark;
+
+
+// Tables, Forms, Inputs
+
+$color__text-screen: $gold;
+
+$color__text-input: $light;
+$color__text-input-focus: $dark;
+
+$color__background-hr: $light;
+
+$color__background-hr: $light;
+
+
+// Code, Pre, Ins, Abbr, Cite, Block Quotes, Text Area
+
+$color__border-abbr: $light;
+
+$color__border-blockquote: $lightest;
+
+$color__text-pre: $dark;
+$color__background-pre: $lightest;
+
+$color__text-cite: $light;
+
+$color__background-hr: $light;
+
+$color__background-ins: $light;
+
+$color__text-code: $lightest;
+$color__text-code-background: $light;
+
+$color__text-textarea: $lightest;
+$color__text-textarea-focus: $lighter;

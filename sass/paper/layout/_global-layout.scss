@@ -1,0 +1,37 @@
+// ==========================================================================
+// Global Theme Layout
+// ==========================================================================
+
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+.site-content {
+	@extend .container;
+	@extend .no-gutter;
+}
+
+.site-main {
+	@extend .col;
+	@extend .col-9;
+	@extend .no-gutter;
+	//margin-top: 170px;
+	padding-top: 13.625em;
+}
+
+.widget-area {
+	@extend .col;
+	@extend .col-3;
+	@extend .no-gutter;
+	//margin-top: 170px;
+	padding-top: 13.625em;
+}
+
+.site,.site-header,
+.site-footer {
+	@extend .clear;
+	@extend .col-12;
+	.site-footer {@extend .row;}
+	.site-info {@extend .col;}
+}

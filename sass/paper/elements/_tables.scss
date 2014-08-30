@@ -1,0 +1,46 @@
+
+// ==========================================================================
+// Tables
+// ==========================================================================
+table {
+    border-collapse: collapse;
+    margin-bottom: 3em;
+    width: 100%;
+    background: #fff;
+  border-spacing: 0;
+  word-wrap: break-word; // CSS3 Browsers
+  -ms-word-wrap: break-word; // IE8
+  *white-space: normal;  // IE7
+}
+table a{ 
+  color: #fff !important;
+  }
+
+td, th {
+    padding: 0.75em 1.5em;
+    text-align: left;
+}
+td.err {
+    background-color: #e992b9;
+    color: #fff;
+    text-align: center;
+    line-height: 1;
+    @include font-size(.75);
+  }
+th {
+    background-color: $light;
+    font-weight: 400;
+    color: #fff;
+    white-space: nowrap;
+}
+tbody th {
+  background-color: $lighter;
+}
+tbody tr:nth-child(2n-1) {
+    background-color: #f5f5f5;
+    transition: all .125s ease-in-out;
+}
+tbody tr:hover {
+    background-color: $lightest;
+    //color: #fff;
+}
