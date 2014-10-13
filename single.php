@@ -2,7 +2,7 @@
 /**
  * The template for displaying all single posts.
  *
- * @package _s
+ * @package paper
  */
 
 get_header(); ?>
@@ -14,7 +14,7 @@ get_header(); ?>
 
 			<?php get_template_part( 'content', 'single' ); ?>
 
-			<?php _s_post_nav(); ?>
+			<?php httpagustealo_github_iopaper_post_nav(); ?>
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template
@@ -26,7 +26,7 @@ get_header(); ?>
 		<?php endwhile; // end of the loop. ?>
 
 		</main><!-- #main -->
+	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
-	</div><!-- #primary -->
 <?php get_footer(); ?>

@@ -8,7 +8,7 @@
  * E.g., it puts together the home page when no home.php file exists.
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package _s
+ * @package paper
  */
 
 get_header(); ?>
@@ -31,7 +31,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php _s_paging_nav(); ?>
+			<?php httpagustealo_github_iopaper_paging_nav(); ?>
 
 		<?php else : ?>
 
@@ -40,7 +40,7 @@ get_header(); ?>
 		<?php endif; ?>
 
 		</main><!-- #main -->
+	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
-	</div><!-- #primary -->
 <?php get_footer(); ?>

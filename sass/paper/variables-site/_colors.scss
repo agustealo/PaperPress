@@ -1,41 +1,40 @@
-$gold: #9c8449;
-$white: #fff;
-$dark: #26292E;
-$light: lighten($dark, 20%);
-$lighter: lighten($dark, 45%);
-$lightest: lighten($dark, 70%);
+// Color Values
+$color__1: #fff; // White
+$color__2: #9c8449; // Gold
+$color__3: #26292E; // Base Color / Darkest
+$light: lighten($color__3, 10%); // Darker
+$lighter: lighten($color__3, 45%); // Dark
+$lightest: lighten($color__3, 70%); // Light
 
+//Assign Colors//
 
 //Main
-
-$color__text-main: $lighter;
-$color__text-heading: $lightest;
-$color__background-body: $dark;
-$color__background-header: $dark;
-$color__background-screen: $lightest;
+$color__text-main: $lighter; // Default font color
+$color__text-heading: $lightest; // Heading Tags
+$color__background-body: $color__3; // Theme default background
+$color__background-header: $color__3; // Theme header background
+$color__background-screen: $lightest; // Theme Screen
 
 
 //Links, Menus, Buttons
+$color__link: $color__1;
+$color__link-visited: darken($color__1, 25%);
+$color__link-hover: darken($color__1, 15%);
 
-$color__link: $white;
-$color__link-visited: darken($white, 25%);
-$color__link-hover: darken($white, 15%);
-
-$color__tex-main-nav: $white;
+$color__tex-main-nav: $color__1;
 $color__border-main-nav: $light;
 
 $color__background-button: $light;
-$color__text-button: $light;
+$color__text-button: $lighter;
 $default-button-hover-color:  $light;
-$default-button-color: $dark;
 
 
 // Tables, Forms, Inputs
 
-$color__text-screen: $gold;
+$color__text-screen: $color__2;
 
 $color__text-input: $light;
-$color__text-input-focus: $dark;
+$color__text-input-focus: $color__3;
 
 $color__background-hr: $light;
 
@@ -48,7 +47,7 @@ $color__border-abbr: $light;
 
 $color__border-blockquote: $lightest;
 
-$color__text-pre: $dark;
+$color__text-pre: $color__3;
 $color__background-pre: $lightest;
 
 $color__text-cite: $light;

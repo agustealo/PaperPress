@@ -7,7 +7,6 @@
 	top: 0;
 	left: 0;
 	padding: 0 !important;
-	height: 180px;
 	z-index: 50;
 	-webkit-transform: translateY(0%);
 	-moz-transform: translateY(0%);
@@ -59,15 +58,6 @@ border-bottom: 1px solid $light;
 	clear: none;
 	@extend .col-3-4;
 	a{line-height:5em;}
-}
-.main-navigation ul{
-	@extend .container-full;
-	height: 60px;
-	line-height: 1.5em;
-	display: inline-table;
-	display: inline-flex;
-    display: -moz-inline-box;
-    display: -moz-box;
 }
 
 

@@ -4,55 +4,88 @@
 
 .main-navigation {
 	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
-
-	ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+	margin: 0 auto;
 
 		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
-			position: absolute;
-			top: 1.5em;
-			left: -999em;
-			z-index: 99999;
+		  text-align: left;
+		  display: inline;
+		  margin: 0;
+		  list-style: none;
+		  padding-left: 0;
 
-			ul {
-				left: -999em;
-				top: 0;
-			}
-
-			li {
-				&:hover > ul {
-					left: 100%;
-				}
-			}
-
-			a {
-			}
-
-			:hover > a {
-			}
-
-			a:hover {
+		  ul {
+			display: none;
 			}
 		}
+	
+ul li {
+  font: bold 12px/18px sans-serif;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 15px 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+ul li:hover {
+  background: $color__background-button;
+  color: $color__text-button;
+}
+ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 150px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+ul li ul li { 
+  background: $color__background-button; 
+  display: block; 
+  color: $color__text-button;
+  text-shadow: 0 -1px 0 #000;
+  margin-bottom: 0;
+}
+ul li ul li:hover { background: #666; }
+ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
 
-		li:hover > ul {
-			left: auto;
-		}
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+	a {
+		color: $color__tex-main-nav;
 	}
-	li {
-		float: left;
-		position: relative;
 
-		&:hover > a {
-		}
-	}
 	a {
 		min-width: 100px;
 		text-transform: uppercase;

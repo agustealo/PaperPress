@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package _s
+ * @package paper
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -20,32 +20,17 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', '_s' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'httpagustealo-github-iopaper' ); ?></a>
 
-	<header id="masthead" role="banner" <?php if ( ! is_singular() ) { echo 'class="site-header"'; } else {echo 'class="site-header-sm"';}?>>
+	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</div>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle"><?php _e( 'Primary Menu', '_s' ); ?></button>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary',
-								'menu'            => '',
-								'container'       => '',
-								'container_class' => '',
-								'container_id'    => '',
-								'menu_class'      => '',
-								'menu_id'         => '',
-								'echo'            => true,
-								'fallback_cb'     => 'wp_page_menu',
-								'before'          => '',
-								'after'           => '',
-								'link_before'     => '',
-								'link_after'      => '',
-								'items_wrap'      => '<ul id="%1$s" class="%2$s menu-lnks">%3$s</ul>',
-								'depth'           => 0,
-								'walker'          => '' ) ); ?>
+			<button class="menu-toggle"><?php _e( 'Primary Menu', 'httpagustealo-github-iopaper' ); ?></button>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
