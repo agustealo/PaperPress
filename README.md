@@ -20,9 +20,7 @@ My ultra-minimal CSS might make me look like theme tartare but that means less s
 Getting Started
 ---------------
 
-If you want to keep it simple, head over to http://underscores.me and generate your `paper` based theme from there. You just input the name of the theme you want to create, click the "Generate" button, and you get your ready-to-awesomize starter theme.
-
-If you want to set things up manually, download `paper` from GitHub. The first thing you want to do is copy the `paper` directory and change the name to something else (like, say, `megatherium`), and then you'll need to do a five-step find and replace on the name in all the templates.
+Download `paper` from GitHub. The first thing you want to do is copy the `paper` directory and change the name to something else (like, say, `paper_press`), and then you'll need to do a five-step find and replace on the name in all the templates.
 
 1. Search for `'paper'` (inside single quotations) to capture the text domain.
 2. Search for `paper_` to capture all the function names.
@@ -32,11 +30,11 @@ If you want to set things up manually, download `paper` from GitHub. The first t
 
 OR
 
-* Search for: `'paper'` and replace with: `'megatherium'`
-* Search for: `paper_` and replace with: `megatherium_`
-* Search for: `Text Domain: paper` and replace with: `Text Domain: megatherium` in style.css.
-* Search for: <code>&nbsp;paper</code> and replace with: <code>&nbsp;Megatherium</code>
-* Search for: `paper-` and replace with: `megatherium-`
+* Search for: `'paper'` and replace with: `'paper_press'`
+* Search for: `paper_` and replace with: `paper_press_`
+* Search for: `Text Domain: paper` and replace with: `Text Domain: paper_press` in style.css.
+* Search for: <code>&nbsp;paper</code> and replace with: <code>&nbsp;paper_press</code>
+* Search for: `paper-` and replace with: `paper_press-`
 
 Then, update the stylesheet header in `style.css` and the links in `footer.php` with your own information. Next, update or delete this readme.
 
