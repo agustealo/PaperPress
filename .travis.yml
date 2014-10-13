@@ -11,13 +11,13 @@ language: php
 # Declare versions of PHP to use. Use one decimal max.
 php:
     # aliased to a recent 5.5.x version
-    - "5.5"
+    #- "5.5"
     # aliased to a recent 5.4.x version
-    - "5.4"
+    #- "5.4"
     # aliased to a recent 5.3.x version
-    - "5.3"
+    #- "5.3"
     # Current $required_php_version for WordPress: 5.2.4
-    - "5.2"
+    - "5.5"
 
 # Declare which versions of WordPress to test against.
 # Also declare whether or not to test in Multisite.
