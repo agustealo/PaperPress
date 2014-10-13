@@ -7,7 +7,8 @@
 # Declare project language.
 # @link http://about.travis-ci.org/docs/user/languages/php/
 language: php
-
+before_install:
+  - php /home/travis/.phpenv/versions/5.3.26/bin/composer.phar self-update
 # Declare versions of PHP to use. Use one decimal max.
 php:
     # aliased to a recent 5.5.x version
