@@ -1,5 +1,7 @@
 ![Travis CI Build Status](https://travis-ci.org/agustealo/paper.svg?branch=master)
 
+![Logo](https://scontent-b-lga.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/10649914_932239630138395_6272501221530320090_n.png?oh=2685f6b76c25dec1318307d4bf9b2578&oe=54F0ED53)
+
 PAPER
 ===
 
