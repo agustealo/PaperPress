@@ -2,7 +2,6 @@
 
 ![Logo](https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/10690206_932245743471117_3622183564651151296_n.png?oh=c687dce715b35f8a92ad52122cddfa1a&oe=54BC10CC&__gda__=1420646672_ea13518c899f151a8d84e053bb0f9565)
 
-PAPER
 ===
 
 Hi. I'm  `paper`, a starter theme base on the WordPress framework `underscores`. Like _s I'm meant to be hacked so I have no need for a child. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
