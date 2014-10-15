@@ -12,9 +12,9 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'http://agustealo-github.io/paper' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'http://agustealo-github.io/paper' ), 'WordPress' ); ?></a>
+			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'paper' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'paper' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'http://agustealo-github.io/paper' ), 'paper', '<a href="http://agustealo.com/" rel="designer">Agustealo Johnson</a>' ); ?>
+			<?php printf( __( 'Theme: %1$s by %2$s.', 'paper' ), 'paper', '<a href="http://agustealo.github.io/" rel="designer">Agustealo Johnson</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

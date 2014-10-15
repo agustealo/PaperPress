@@ -3,7 +3,10 @@
 // Clearfix
 .clear:before, .clear:after {
   content: "";
-  display: table;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: inherit;
 }
 .clear:after { clear: both; }
 .clear { zoom: 1; } // IE7
@@ -32,11 +35,6 @@ i, em, .em { font-style: italic; }
 p {
   margin: 0 0 1.6em 0;
   }
-pre {
-	margin: 1em 0;
-	color:$color__text-pre;
-}
-ul + p, ul + pre, ol + p, ol + pre { margin-top: 0; }
 
 // Abbreviations
 abbr[title] { border-bottom: 1px dotted; }
@@ -107,6 +105,7 @@ address {
 }
 
 pre {
+  color:$color__text-pre;
   background: $color__background-pre;
   font-family: $font__pre;
   line-height: $font__line-height-pre;
@@ -114,6 +113,12 @@ pre {
   max-width: 100%;
   overflow: auto;
   padding: 1.6em;
+  word-break: break-all; /* webkit */
+  word-wrap: break-word;
+  white-space: pre;
+  white-space: -moz-pre-wrap; /* fennec */
+  white-space: pre-wrap;
+  white-space: pre\9; /* IE7+ */
 }
 
 code, kbd, tt, var {

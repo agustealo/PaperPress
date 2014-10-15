@@ -12,7 +12,7 @@ if ( ! isset( $content_width ) ) {
 	$content_width = 640; /* pixels */
 }
 
-if ( ! function_exists( 'httpagustealo_github_iopaper_setup' ) ) :
+if ( ! function_exists( 'paper_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -20,15 +20,15 @@ if ( ! function_exists( 'httpagustealo_github_iopaper_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function httpagustealo_github_iopaper_setup() {
+function paper_setup() {
 
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
 	 * If you're building a theme based on paper, use a find and replace
-	 * to change 'httpagustealo-github-iopaper' to the name of your theme in all the template files
+	 * to change 'paper' to the name of your theme in all the template files
 	 */
-	load_theme_textdomain( 'httpagustealo-github-iopaper', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'paper', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -42,15 +42,15 @@ function httpagustealo_github_iopaper_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'httpagustealo-github-iopaper' ),
+		'primary' => __( 'Primary Menu', 'paper' ),
 	) );
-
+	
 	/*
 	 * Switch default core markup for search form, comment form, and comments
 	 * to output valid HTML5.
 	 */
 	add_theme_support( 'html5', array(
-		'search-form', 'comment-form', 'comment-list', 'gallery', 'caption',
+		'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
 	) );
 
 	/*
@@ -58,26 +58,26 @@ function httpagustealo_github_iopaper_setup() {
 	 * See http://codex.wordpress.org/Post_Formats
 	 */
 	add_theme_support( 'post-formats', array(
-		'aside', 'image', 'video', 'quote', 'link',
+		'aside', 'image', 'video', 'quote', 'link'
 	) );
 
-	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'httpagustealo_github_iopaper_custom_background_args', array(
+	// Setup the WordPress core custom background feature.
+	add_theme_support( 'custom-background', apply_filters( 'paper_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
 }
-endif; // httpagustealo_github_iopaper_setup
-add_action( 'after_setup_theme', 'httpagustealo_github_iopaper_setup' );
+endif; // paper_setup
+add_action( 'after_setup_theme', 'paper_setup' );
 
 /**
  * Register widget area.
  *
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
-function httpagustealo_github_iopaper_widgets_init() {
+function paper_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'httpagustealo-github-iopaper' ),
+		'name'          => __( 'Sidebar', 'paper' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -86,23 +86,23 @@ function httpagustealo_github_iopaper_widgets_init() {
 		'after_title'   => '</h1>',
 	) );
 }
-add_action( 'widgets_init', 'httpagustealo_github_iopaper_widgets_init' );
+add_action( 'widgets_init', 'paper_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function httpagustealo_github_iopaper_scripts() {
-	wp_enqueue_style( 'httpagustealo-github-iopaper-style', get_stylesheet_uri() );
+function paper_scripts() {
+	wp_enqueue_style( 'paper-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'httpagustealo-github-iopaper-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+	wp_enqueue_script( 'paper-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
-	wp_enqueue_script( 'httpagustealo-github-iopaper-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+	wp_enqueue_script( 'paper-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'httpagustealo_github_iopaper_scripts' );
+add_action( 'wp_enqueue_scripts', 'paper_scripts' );
 
 /**
  * Implement the Custom Header feature.

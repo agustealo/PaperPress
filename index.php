@@ -31,7 +31,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php httpagustealo_github_iopaper_paging_nav(); ?>
+			<?php paper_paging_nav(); ?>
 
 		<?php else : ?>
 

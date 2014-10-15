@@ -29,7 +29,11 @@
 // Clearfix
 @mixin clearfix() {
 	content: "";
-	display: table;
+	position: inherit !important;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	display: -moz-box;
 }
 
 // Center after (not all clearfix need this also)

@@ -10,28 +10,40 @@ body {
 .site-content {
 	@extend .container;
 	@extend .no-gutter;
+	position: inherit;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.content-area {
+	@extend .col;
+	@extend .col-9;
+	@extend .no-gutter;
 }
 
 .site-main {
 	@extend .col;
-	@extend .col-9;
 	@extend .no-gutter;
 	//margin-top: 170px;
-	padding-top: 13.625em;
+	padding-top: 300px;
+	padding-right: 3em;
+	max-width: 100%;
 }
 
 .widget-area {
-	@extend .col;
+	float:right;
+	clear: none;
 	@extend .col-3;
 	@extend .no-gutter;
 	//margin-top: 170px;
-	padding-top: 13.625em;
+	padding-top: 300px;
 }
 
 .site,.site-header,
 .site-footer {
 	@extend .clear;
 	@extend .col-12;
-	.site-footer {@extend .row;}
-	.site-info {@extend .col;}
+	.site-footer {@extend .row; clear:both;}
+	.site-info {@extend .container;}
 }
