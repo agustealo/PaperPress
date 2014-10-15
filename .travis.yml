@@ -41,7 +41,7 @@ script: phpunit
 notifications:
     email:
         recipients:
-          - paul@buddypress.org
+          - agustealo@gmail.com
         on_success: change
         on_failure: always
 
