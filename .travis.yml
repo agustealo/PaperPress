@@ -21,6 +21,8 @@ php:
     # Current $required_php_version for WordPress: 5.2.4
     - "5.2"
 
+script: build.sh
+
 # Declare which versions of WordPress to test against.
 # Also declare whether or not to test in Multisite.
 env:
