@@ -38,7 +38,10 @@ function paper_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	//add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'full-thumb', 960, 400, array( 'center', 'center' ) ); // (Large full width thumb)
+	//add_image_size( 'medium-thumb', 600, 600, array( 'center', 'center' ) ); // (Medium square thumb)
+	//add_image_size( 'small-thumb', 300, 300, array( 'center', 'center' ) ); // (Small square thumb)
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(

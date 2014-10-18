@@ -69,19 +69,20 @@ li:hover > ul {
 
 }//End
 
-ul li .sub-menu {
+//Submenu
+ul li ul {
 		  background: $color__background-body;
 			border: solid 1px;
 			border-top:0;
 			z-index: 10;
-	&>li{
+	& li{
 		  background: $color__background-body;
 		  display: block; 
 		  color: $color__text-button;
 		  margin-bottom: 0;
 		  font-size: 0.8em;
 		  max-width: 100%;
-		  text-align: left;
+		  float: left;
 		  &> ul {
 		  	border-top:3px solid;
 		  	//border-left:3px solid;

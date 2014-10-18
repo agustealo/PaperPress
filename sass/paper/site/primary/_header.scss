@@ -2,7 +2,7 @@
 // Header
 // ==========================================================================
 
-.site-header, .site-header-sm {
+.site-header{
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -23,38 +23,12 @@
 	@extend .container-full;
 	display: box;
 }
-.site-header-sm .site-branding {
-	float:left;
-	@extend .col-1-4;
-	width: auto;
-	display: box;
-}
-
-/* Header container styling */
-
-.site-header-sm .main-navigation >ul{
-	width: auto;
-    margin: 0 50px 0 20px;
-}
-.site-header-sm {
-height: 60px;
-border-bottom: 1px solid $light;
-}
-.site-header-sm >ul {
-	float:right;
-}
 
 /* Navigation styling */
 
 .main-navigation {
 	clear: both;
 	width: 100%;
-}
-.site-header-sm .main-navigation {
-	float: right;
-	clear: none;
-	@extend .col-3-4;
-	a{line-height:5em;}
 }
 
 
@@ -85,22 +59,6 @@ border-bottom: 1px solid $light;
 	margin-bottom: 0 !important;
 }
 
-.site-header-sm h1 a {
-	float: left;
-	line-height: 60px;
-	margin-bottom: 0 !important;
-}
-
-.site-header-sm h1 {
-	text-transform: uppercase;
-    font-size: 3em;
-	margin: 0 20px 0 50px;
-	padding: 0;
-	cursor: default;
-	height: 60px;
-	line-height: 1.5em;
-}
-
 .site-header h2 {
 	display: inline-block;
 	vertical-align: middle;
@@ -111,9 +69,6 @@ border-bottom: 1px solid $light;
 	padding:0;
 	z-index: 1;
 	width:100%;
-}
-.site-header-sm h2 {
-    display:none !important;
 }
 
 .site-header h1::before,
