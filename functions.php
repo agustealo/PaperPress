@@ -4,7 +4,13 @@
  *
  * @package paper
  */
-
+ //Add Google font to wp_enqueue_script
+function load_fonts() {
+            wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Lato|Nixie+One');
+            wp_enqueue_style( 'googleFonts');
+        }
+    
+    add_action( 'paper_google_fonts_scripts', 'load_fonts');
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
