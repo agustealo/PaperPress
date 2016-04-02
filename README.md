@@ -1,4 +1,6 @@
-[![Build Status](https://travis-ci.org/agustealo/paper.svg?branch=master)](https://travis-ci.org/agustealo/paper)
+![Travis CI Build Status](https://travis-ci.org/agustealo/paper.svg?branch=master)
+
+![Logo](https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/10690206_932245743471117_3622183564651151296_n.png?oh=c687dce715b35f8a92ad52122cddfa1a&oe=54BC10CC&__gda__=1420646672_ea13518c899f151a8d84e053bb0f9565)
 
 ===
 
